@@ -13,8 +13,11 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
-    ];
+        \App\Console\Commands\MakeModelCommand::class,
+        \App\Console\Commands\MakeControllerCommand::class,
+        \App\Console\Commands\MakeFactoryCommand::class,
+        \App\Console\Commands\MakeSeederCommand::class,
+    ];    
 
     /**
      * Define the application's command schedule.
